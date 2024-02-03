@@ -1,0 +1,119 @@
+$mauveine: hsla(290, 61%, 35%, 1);
+$purpureus: hsla(291, 27%, 51%, 1);
+$cool-gray: hsla(244, 16%, 65%, 1);
+$powder-blue: #9fb8c6;
+$aquamarine: hsla(153, 86%, 81%, 1);
+
+main {
+  background-color: $aquamarine;
+  font-family: 'Sora', sans-serif;
+
+  .background-texture {
+    background-color: transparent;
+    /* Change to your preferred background color */
+    background-image: linear-gradient($powder-blue 1px, transparent 1px),
+      linear-gradient(90deg, $cool-gray 1px, transparent 1px);
+    background-size: 25px 25px;
+    /* Change to your preferred square size */
+  }
+
+
+  .container {
+    display: grid;
+    gap: 25px;
+    padding: 0 15px 25px;
+  }
+
+  h1 {
+    color: $mauveine;
+    font-weight: 600;
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  strong {
+    color: $mauveine;
+  }
+
+  .break-line {
+    display: block;
+  }
+
+  ul {
+    display: block;
+    list-style: none;
+    padding-inline-start: 0px;
+
+    li {
+      position: relative;
+      margin: 0 auto;
+      padding-left: 20px;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 13px;
+        height: 13px;
+        background-image: url('../assets/arrow_right.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  section {
+    outline: black 3px solid;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px 1px #000000;
+  }
+
+  .contact {
+    a {
+      color: $purpureus;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  .resume {
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  .experience {}
+
+  .education {}
+
+  .tech-skills {}
+
+  .languages {}
+
+  .media {
+
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    img {
+      max-width: 30px;
+      max-height: 30px;
+    }
+  }
+}
